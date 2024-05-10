@@ -19,7 +19,7 @@ jobs:
           submodules: recursive
       - name: Run tests
         run: cd ./src/app && go test -v -p=1 -timeout=0 ./...
-      - uses: wangyoucao577/go-release-action@v1.38
+      - uses: wangyoucao577/go-release-action@v1.50
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           goos: ${{ matrix.goos }}
